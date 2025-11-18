@@ -1,5 +1,6 @@
 import './styles.css';
 import { loadHome } from "./home.js";
+import { loadMenu } from './menu.js';
 
 const content = document.getElementById('content');
 const nav = document.querySelector('nav');
@@ -18,3 +19,9 @@ const createHomePage = () => {
     loadHome();
 }
 homeNavButton.addEventListener('click', createHomePage);
+
+const createMenuPage = () => {
+    clearPage();
+    loadMenu();
+}
+menuNavButton.addEventListener('click', createMenuPage);
