@@ -2,7 +2,7 @@ import './styles.css';
 import { loadHome } from "./home.js";
 import { loadMenu } from './menu.js';
 
-const content = document.getElementById('content');
+export const content = document.getElementById('content');
 const nav = document.querySelector('nav');
 const homeNavButton = nav.querySelector('button');
 const menuNavButton = nav.querySelector('button:nth-child(2)');
