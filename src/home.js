@@ -1,7 +1,6 @@
 import sushiImage from './images/sushi.jpeg';
 import interior from './images/interior.jpg';
-
-const content = document.getElementById('content');
+import { content } from './index.js';
 
 const homeContent = document.createElement('div');
 homeContent.classList.add('home-page');
