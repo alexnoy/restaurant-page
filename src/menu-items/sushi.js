@@ -11,7 +11,7 @@ import tunaRoll from '../images/tunaRoll.jpg';
 import veggieRoll from '../images/veggieRoll.jpg';
 import volcanoRoll from '../images/volcanoRoll.jpg';
 
-const sushiSection = document.createElement('div');
+export const sushiSection = document.createElement('div');
 sushiSection.classList.add('sushi-section');
 
 const sushiRolls = [
@@ -49,8 +49,3 @@ sushiRolls.forEach((roll) => {
     sushiCard.append(sushiImage, sushiTitle, sushiDescription, sushiPrice);
     sushiSection.appendChild(sushiCard);
 });
-
-
-export const loadSushi = () => {
-    return sushiSection;
-}
