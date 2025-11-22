@@ -19,20 +19,19 @@ const initialLoad = (() => {
     loadHome();
 })();
 
-const createHomePage = () => {
+const createPage = (loadPage) => {
     clearPage();
-    loadHome();
+    loadPage();
 }
-homeNavButton.addEventListener('click', createHomePage);
 
-const createMenuPage = () => {
-    clearPage();
-    loadMenu();
-}
-menuNavButton.addEventListener('click', createMenuPage);
+homeNavButton.addEventListener('click', () => {
+    createPage(loadHome);
+});
 
-const createAboutPage = () => {
-    clearPage();
-    loadAbout();
-}
-aboutNavButton.addEventListener('click', createAboutPage);
+menuNavButton.addEventListener('click', () => {
+    createPage(loadMenu);
+});
+
+aboutNavButton.addEventListener('click', () => {
+    createPage(loadAbout);
+});
