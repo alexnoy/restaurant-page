@@ -14,6 +14,10 @@ const clearPage = () => {
     });
 }
 
+const initialLoad = (() => {
+    loadHome();
+})();
+
 const createHomePage = () => {
     clearPage();
     loadHome();
