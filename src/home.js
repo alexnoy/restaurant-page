@@ -14,7 +14,7 @@ foodImage.classList.add('sushi-hero-image');
 foodImage.src = sushiImage;
 
 const homeDescription = document.createElement('p');
-homeDescription.textContent = "At Super Sushi, every plate is crafted with care, combining fresh ingredients with traditional Japanese techniques. The restaurant's warm, relaxed atmosphere makes it an inviting place to sit down, unwind, and enjoy good food with good company. Whether you're stopping in for a quick lunch or settling in for a full dinner, Super Sushi offers a comfortable space where flavorful rolls, sashimi, and house specialties take center stage. It's a place that welcomes everyone—from longtime sushi lovers to those trying it for the first time.";
+homeDescription.textContent = "At Super Sushi, every plate is crafted with care, combining fresh ingredients with traditional Japanese techniques. The restaurant's warm, relaxed atmosphere makes it an inviting place to sit down, unwind, and enjoy good food with good company. Whether you're stopping in for a quick lunch or settling in for a full dinner, Super Sushi offers a comfortable space where flavorful rolls, sashimi, and house specialties take center stage. It's a place that welcomes everyone from longtime sushi lovers to those trying it for the first time.";
 
 const interiorImage = document.createElement('img');
 interiorImage.classList.add('rest-interior-image');
