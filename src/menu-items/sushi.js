@@ -37,6 +37,9 @@ sushiRolls.forEach((roll) => {
     sushiImage.classList.add('sushi-menu-image', roll.class);
     sushiImage.src = roll.imageSrc;
 
+    const cardContent = document.createElement('div');
+    cardContent.classList.add('card-content');
+
     const sushiTitle = document.createElement('h2');
     sushiTitle.textContent = roll.title;
 
@@ -46,6 +49,7 @@ sushiRolls.forEach((roll) => {
     const sushiPrice = document.createElement('p');
     sushiPrice.textContent = roll.price;
 
-    sushiCard.append(sushiImage, sushiTitle, sushiDescription, sushiPrice);
+    cardContent.append(sushiTitle, sushiDescription, sushiPrice);
+    sushiCard.append(sushiImage, cardContent);
     sushiSection.appendChild(sushiCard);
 });

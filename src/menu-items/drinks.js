@@ -37,12 +37,16 @@ drinks.forEach((drink) => {
     drinkImage.classList.add('drink-menu-image', drink.class);
     drinkImage.src = drink.imageSrc;
 
+    const cardContent = document.createElement('div');
+    cardContent.classList.add('card-content');
+
     const drinkTitle = document.createElement('h2');
     drinkTitle.textContent = drink.title;
 
     const drinkPrice = document.createElement('p');
     drinkPrice.textContent = drink.price;
 
-    drinkCard.append(drinkImage, drinkTitle, drinkPrice);
+    cardContent.append(drinkTitle, drinkPrice);
+    drinkCard.append(drinkImage, cardContent);
     drinkSection.appendChild(drinkCard);
 });
