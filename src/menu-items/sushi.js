@@ -11,8 +11,8 @@ import tunaRoll from '../images/tunaRoll.jpg';
 import veggieRoll from '../images/veggieRoll.jpg';
 import volcanoRoll from '../images/volcanoRoll.jpg';
 
-export const sushiSection = document.createElement('div');
-sushiSection.classList.add('sushi-section');
+export const sushiCardsDiv = document.createElement('div');
+sushiCardsDiv.classList.add('sushi-cards');
 
 const sushiRolls = [
     {imageSrc: caliRoll, class: 'california-roll', title: 'California Roll', price: '$9.99', description: 'Kanikama, Avocado, Cucumber, Masago, & Sesame seeds on top'},
@@ -51,5 +51,5 @@ sushiRolls.forEach((roll) => {
 
     cardContent.append(sushiTitle, sushiDescription, sushiPrice);
     sushiCard.append(sushiImage, cardContent);
-    sushiSection.appendChild(sushiCard);
+    sushiCardsDiv.appendChild(sushiCard);
 });

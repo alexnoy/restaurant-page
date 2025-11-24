@@ -11,8 +11,8 @@ import peachTea from '../images/peachTea.jpg';
 import pepsi from '../images/pepsi.jpg';
 import starry from '../images/starry.jpg';
 
-export const drinkSection = document.createElement('div');
-drinkSection.classList.add('drink-section');
+export const drinkCardsDiv = document.createElement('div');
+drinkCardsDiv.classList.add('drink-cards');
 
 const drinks = [
     {imageSrc: appleJuice, class: 'apple-juice', title: 'Apple Juice', price: '$2.99'},
@@ -48,5 +48,5 @@ drinks.forEach((drink) => {
 
     cardContent.append(drinkTitle, drinkPrice);
     drinkCard.append(drinkImage, cardContent);
-    drinkSection.appendChild(drinkCard);
+    drinkCardsDiv.appendChild(drinkCard);
 });
