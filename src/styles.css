@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'monsterrat';
+    src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+
 *,
 *::before,
 *::after {
@@ -8,30 +13,73 @@
 
 #content {
     background-color: whitesmoke;
+    min-height: 100vh;
+    font-family: 'monsterrat', sans-serif;
 }
 
 header {
-    background-color: rgb(219, 144, 5);
+    background-image: url(./images/interior.jpg);
+    background-position: center;
+    background-size: cover;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: end;
+    position: sticky;
+    top: 0px;
 }
 
 nav {
     display: flex;
-    gap: 15px;
+    gap: 16px;
     padding-bottom: 10px;
 }
 
 button {
     height: 25px;
-    aspect-ratio: 2 / 1;
+    aspect-ratio: 3 / 1;
     border: none;
+    border-radius: 8px;
+    font-weight: 600;
 }
 
 button:hover {
     cursor: pointer;
+}
+
+.home-page {
+    min-height: inherit;
+    display: grid;
+    grid-template-rows: 3fr 2fr 1fr;
+    justify-items: center;
+    align-items: end;
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+}
+
+.sushi-hero-image {
+    width: 491px;
+    border-radius: 10px;
+}
+
+.rest-name {
+    font-size: 96px;
+    color: rgb(219, 144, 5);
+    text-shadow: 4px 2px 2px black;
+}
+
+.home-description {
+    font-size: 24px;
+    width: 65ch;
+    padding-bottom: 56px;
 }
 
 .menu-page {
@@ -48,15 +96,16 @@ button:hover {
 
 .sushi-cards, .drink-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 25px;
 }
 
 .card {
+    height: 150px;
     display: flex;
-    box-shadow: 1px 3px 4px rgb(0,0,0, 15%);
+    box-shadow: 0px 5px 15px rgb(0,0,0, 15%);
     border-left: 5px solid orange;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 5px;
     background-color: white;
 }
@@ -74,6 +123,7 @@ button:hover {
     width: 150px;
     object-fit: cover;
     align-self: center;
+    border-radius: 4px;
 }
 
 .about-page {
@@ -90,7 +140,7 @@ button:hover {
     width: 65ch;
     align-items: center;
     justify-content: center;
-    box-shadow: 1px 3px 4px rgb(0,0,0, 15%);
+    box-shadow: 0px 5px 15px rgb(0,0,0, 15%);
     background-color: white;
     padding: 10px;
     line-height: 1.5;
